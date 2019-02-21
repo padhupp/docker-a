@@ -1,0 +1,13 @@
+table
+{
+    margin: 10px 0;
+    border: solid 1px #333;
+    font: 17px Verdana;
+}
+td
+{
+    margin: 10px 0;
+    border: solid 1px #333;
+    font: 15px Verdana;
+    width: 7cm;
+}

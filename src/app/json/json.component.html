@@ -1,0 +1,18 @@
+<div style="text-align:left;width:500px;">
+    <h1>
+        {{ title }}!
+    </h1>
+
+    <table *ngIf="arrTopics">
+        <tr>
+            <th>ID</th>
+                <th>Name of Topic</th>
+                    <th>Type of Type</th>
+        </tr>
+        <tr *ngFor="let topic of arrTopics">
+            <td>{{topic.ID}}</td>
+                <td>{{topic.Name}}</td>
+                    <td>{{topic.Type}}</td>
+        </tr>
+    </table>
+</div>

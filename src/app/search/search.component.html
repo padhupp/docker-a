@@ -1,0 +1,32 @@
+<input [(ngModel)]="searchText"  placeholder="Search.." class="advancedSearchTextbox">
+<table>
+    <tr>
+        <th>no</th>
+        <th>Name</th>
+        <th>Age</th>
+
+    </tr>
+  <tr *ngFor="let emp of customerData | grdFilter: {name: searchText, Age:searchText,  blog: searchText}; let i=index;">
+    <td style="width: 5%;"><a routerLink="/extend1">{{i +1}}</a></td>
+    <td style="width: 10%;">{{emp.name}}</td>
+    <td style="width: 5%;">{{emp.Age}}</td>
+  </tr>
+</table>
+
+
+
+<p-dropdown 
+[options]="cars"
+[(ngModel)]="selectedCar"
+scrollHeight="400px"
+filter="true"
+filterBy="value"
+resetFilterOnHide="true">
+<ng-template let-car pTemplate="item">
+<div >
+<ul>
+<span class="item-value1">{{car.value}}</span>
+</ul>
+</div>
+</ng-template> 
+</p-dropdown>

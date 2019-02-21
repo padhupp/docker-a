@@ -1,0 +1,4 @@
+
+<!--<p-calendar dateRangeSelector showButtonBar="true" [(ngModel)]="dateRangeSel" readonlyInput="true" placeholder="Last 7 days" styleClass="rangeCalender" showIcon="true" dateFormat="yy-mm-dd" [showTime]="true" hourFormat="24" selectionMode="range" ></p-calendar>-->
+<p>Pick your date</p>
+<p-calendar dateRangeSelector [(ngModel)]="dateRangeSel" readonlyInput="true"  [monthNavigator]="true" [yearNavigator]="true" yearRange="2000:2030" styleClass="rangeCalender" showIcon="true" dateFormat="dd/mm/y"  hourFormat="24" selectionMode="range" ></p-calendar>

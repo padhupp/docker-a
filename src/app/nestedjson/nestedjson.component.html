@@ -1,0 +1,19 @@
+<h3 style='color: brown'>Accessing data seperatly</h3>
+<div>
+<h3>{{ myarray.name }}</h3>
+<h3>{{ myarray.age }}</h3><br>
+<table style="text-align:center;width:300px;">
+    <tr *ngFor="let n of myarray.cars">
+      <td>
+        {{ n.name }}
+      </td>
+      <td>
+      <table style='border: none'>
+        <tr  *ngFor="let m of n.models">
+          <td style='border: none'>{{ m }}</td>
+        </tr>
+      </table>
+      </td>
+    </tr> 
+</table>
+</div>

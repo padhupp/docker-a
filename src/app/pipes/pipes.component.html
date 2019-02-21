@@ -1,0 +1,37 @@
+<div class="container">
+  <br><br>
+  <h4 style='color:blue'>Date Pipe</h4>
+  <p>The website's <b>birthday</b> is {{ birthday | date }}</p>
+  <h4 style='color:blue'>Async Pipes</h4>
+  <p>Description:The async pipe subscribes to an Observable or Promise and returns the latest value it has emitted.</p>
+  <div>
+      <code>promise|async</code>: 
+      <button (click)="clicked()">{{ arrived ? 'Reset' : 'Resolve' }}</button>
+      <span>Wait for it... {{ greeting | async }}</span>
+  </div>
+  <h4 style='color:blue'>Decimal Pipes</h4>
+  <p>If no parameters are specified, the function rounds off to the nearest value using this rounding method. The behavior differs from that of the JavaScript Math.round() function. In the following case for example, the pipe rounds down where Math.round() rounds up.</p>
+  <div>
+      <p>e (no formatting): {{e | number}}</p>
+  </div>
+  <h4 style='color:blue'>Currency Pipes</h4>
+  <p>Transforms a number to a currency string.</p>
+  <div>
+      <p>A: {{a | currency}}</p>
+  </div>
+  <h4 style='color:blue'>Json Pipes</h4>
+  <p>Transforms data into json format.</p>
+  <div>
+      <p>Without JSON pipe:</p>
+      <pre>{{object}}</pre>
+      <p>With JSON pipe:</p>
+      <pre>{{object | json}}</pre>
+    </div>
+  <h4 style='color:blue'>Select Pipes</h4>
+    <p>Generic selector that displays the string that matches the current value.</p>
+    <div>{{gender | i18nSelect: inviteMap}} </div>
+<br>
+<br>
+<button type="button" class="btn btn-primary" routerLink="../">Back To Home</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-primary" routerLink="/directive">Back To Previous</button>
+</div>

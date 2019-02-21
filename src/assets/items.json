@@ -1,0 +1,44 @@
+{
+	"PartnerName":"JBHProf",
+ "BusinessIDs":["zz123","zz345"],
+ "ProcessingPolicy":"None",
+ "ResponseType":"SOAP",
+ "Comments":"Partner Comments",
+ "Destinations":[{
+	 "AS2":{
+		 "FileName":"PATCertificate.pem",
+		 "FileContent":"Q2VydGlmaWNhdGU=",
+		 "DestName":"DestName",
+		 "DestURL":"17.127.124:9080",
+		 "ASEncrypt":"on",
+		 "ASMDNRequest":"off",
+		 "ASMDNRequestSigned":"off",
+		 "Retransmit":"on",
+		 "ASMDNRequestSignedAlgs":"",
+		 "EnableX12":"on",
+		 "EnableEDIFACT":"off",
+		 "EnableXML":"off",
+		 "EnableBinary":"off"
+		 }
+		}],
+		"OverrideASID":"asd",
+		"ASAllowDuplicateMessage":"Always",
+		"ASSendUnsigned":"off",
+		"MaxResends":3,
+		"Contacts":[
+			{"GivenName":"Bhanu",
+			  "Title":"Developer",
+			  "Phone":"8374527586",
+			  "Email":"bhanu@gmail.com",
+			  "FamilyName":"Amazon"
+			  },
+			  {
+				  "GivenName":"Vijay",
+				  "Title":"Tester",
+				  "Phone":"56236589",
+				  "Email":"vijay@gmail.com",
+				  "FamilyName":"Amazon"
+			  }
+		]
+	
+}

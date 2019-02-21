@@ -1,0 +1,17 @@
+
+<p-dataTable class="lf-p-dataTable" selectionMode="multiple" [value]="data" [rows]="4"  [pageLinks]="5" [paginator]="true">
+  <p-headerColumnGroup>
+    
+    <p-row>
+      <p-column header="name" field="name" sortable="true" [filter]="true" filterPlaceholder="Name...">name</p-column>
+      <p-column  header="age" field="age" sortable="true" [filter]="true" filterPlaceholder="Age..."></p-column>
+      <p-column  header="job" field="job" sortable="true" [filter]="true" filterPlaceholder="Job Title..."></p-column>
+      <p-column  header="loc" field="location" sortable="true" [filter]="true" filterPlaceholder="Location..."></p-column>
+    </p-row>
+  </p-headerColumnGroup>
+  <p-column field="name"></p-column>
+  <p-column field="age"></p-column>
+  <p-column field="job"></p-column>
+  <p-column field="location"></p-column>
+
+</p-dataTable>

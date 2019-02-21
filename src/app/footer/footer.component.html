@@ -1,0 +1,14 @@
+<div class="pos-f-t">
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark"> 
+<p-dialog header="Query box" [(visible)]="display" [modal]="true" [responsive]="true" [style]="{width: '350px', minWidth: '200px'}" [minY]="70" 
+[maximizable]="true" [baseZIndex]="10000">
+<span><app-query></app-query></span>
+<p-footer>
+    <button type="button" pButton icon="pi pi-check" (click)="display=false" label="Yes"></button>
+    <button type="button" pButton icon="pi pi-close" (click)="display=false" label="No" class="ui-button-secondary"></button>
+</p-footer>
+</p-dialog>
+
+<button type="button" (click)="showDialog()" pButton icon="pi pi-info-circle" label="Show"></button>
+</nav>
+</div>

@@ -1,0 +1,45 @@
+<div class="container" *ngIf="!name; else forminfo">
+  <div [hidden]="submitted">
+  <form [formGroup]="myForm" (ngSubmit)="submit()" name="myForm">
+       <div class="form-container">
+              <br>
+               <label>Name
+                <input type="text" pInputText formControlName="name" [(ngModel)]="Name"/>
+               </label><br>
+               <label>Password
+                <input type="text" pInputText formControlName="pass" [(ngModel)]="Pass"/>
+               </label><br>
+               <label>select area
+                <p-checkbox label="java" value="java" formControlName="area" [(ngModel)]="selectedValues"></p-checkbox>
+                <p-checkbox   label="c" value="c" formControlName="area" [(ngModel)]="selectedValues"></p-checkbox>
+               </label><br>
+              <label>surname
+             <input type="text" pInputText formControlName="surname" [(ngModel)]="surName"/>
+              </label><br>
+             <label>gender
+             <p-radioButton  label="male" value="female" formControlName="gender" [(ngModel)]="selectedValue"></p-radioButton>
+             <p-radioButton label="female" value="male" formControlName="gender" [(ngModel)]="selectedValue"></p-radioButton>
+            </label><br>
+            <div class="container">
+            <p-fieldset formArrayName="items">
+            <div class="form-group" *ngFor="let item of myForm.get('items').controls" [formGroup]="item">
+                    <label >empno:</label>
+                    <input type="text" pInputText formControlName="empno"><br>
+                    <label >fullname:</label>
+                    <input type="text" pInputText formControlName="fullname"><br>
+                </div>
+              </p-fieldset>
+              <div class="form-group">
+                <p-button type="button" label="add" (click)="myForm.get('items').push(buildItem(''))"></p-button>
+            </div>
+            </div>
+      </div>
+</form>
+</div>
+
+<div>
+  <p>With JSON pipe:</p>
+  <code>
+  <pre>{{ myForm?.value | json }}</pre>
+  </code>
+</div>
